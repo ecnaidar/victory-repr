@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: rgb(242, 243, 246);
+}
+
+tr.myrow {
+  background-color: rgb(147, 35, 88) !important;
+  color: white !important;
+}
+
+.not-valid {
+  color: gray;
+  font-style: italic;
+}
+
+tr.sumerror {
+  text-decoration: underline wavy red;
+}
+
+div.mt {
+  margin-top: 2em;
+}
+
+.nav-pills a {
+  color: black;
+}
+
+.nav-tabs > li > a {
+  color: black;
+}
+
+.navbar-static-top,
+.navbar-right > li > a {
+  background-color: rgb(147, 35, 88);
+}
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+  background-color: rgb(147, 35, 88);
+}
+
+.sortStyle {
+  background-color: white;
+}
+
+.force-background {
+  -webkit-print-color-adjust: exact;
+}
+
+@media print {
+  .nav-pills > li.active > a {
+    background-color: rgb(147, 35, 88) !important;
+    color: white !important;
+    -webkit-print-color-adjust: exact;
+  }
+  .nav-stacked > li:not(.active) {
+    display: none;
+  }
+  @page {
+    margin-bottom: 2cm;
+  }
+  h2 {
+    break-after: avoid;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  body {
+    font-size: 10px;
+  }
+}
+
+@keyframes tooltipFade {
+  from {
+    background-color: rgba(0, 0, 0, 0);
+    visibility: hidden;
+  }
+  1% {
+    background-color: rgba(0, 0, 0, 0);
+    visibility: visible;
+  }
+  to {
+    background-color: rgba(0, 0, 0, 0.5);
+    visibility: visible;
+  }
+}
+
+@keyframes enemy {
+  100% {
+    transform: translateY(1000px);
+  }
+}
+
+.opacity {
+  animation: "myopacity 1s linear forwards infinite";
+}
